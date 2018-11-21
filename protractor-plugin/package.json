@@ -1,0 +1,33 @@
+{
+  "name": "@ng-apimock/demo-protractor-plugin",
+  "version": "0.0.0",
+  "description": "@ng-apimock/protractor-plugin demo",
+  "author": {
+    "name": "Mischa Dasberg",
+    "email": "mischa@dasberg.nl"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@ng-apimock/core": "1.0.15",
+    "@ng-apimock/test-application": "1.0.12",
+    "@ng-apimock/protractor-plugin": "1.0.12",
+    "@types/chai": "4.1.7",
+    "@types/cucumber": "4.0.4",
+    "@types/fs-extra": "5.0.4",
+    "chai": "4.2.0",
+    "connect": "3.6.6",
+    "cucumber": "5.0.2",
+    "fs-extra": "7.0.1",
+    "rimraf": "2.6.2",
+    "serve-static": "1.13.2",
+    "typescript": "3.1.6",
+    "protractor-cucumber-framework": "6.1.1",
+    "protractor": "5.4.1"
+  },
+  "scripts": {
+    "serve": "node serve.js",
+    "preprotractor": "rimraf test && tsc -p tsconfig.json",
+    "protractor": "protractor protractor.conf.js"
+  }
+}
