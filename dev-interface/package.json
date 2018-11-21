@@ -1,0 +1,20 @@
+{
+  "name": "@ng-apimock/demo-dev-interface",
+  "version": "0.0.0",
+  "description": "@ng-apimock/dev-interface demo",
+  "author": {
+    "name": "Mischa Dasberg",
+    "email": "mischa@dasberg.nl"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@ng-apimock/core": "1.0.15",
+    "@ng-apimock/dev-interface": "1.0.5",
+    "connect": "3.6.6",
+    "serve-static": "1.13.2"
+  },
+  "scripts": {
+    "serve": "node serve.js"
+  }
+}
