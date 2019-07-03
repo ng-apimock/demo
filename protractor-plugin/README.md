@@ -7,7 +7,7 @@ npm install
 ```
 
 #### Serve
-The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/webdriverio-plugin/serve.js) script:
+The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/protractor-plugin/serve.js) script:
  - processes the mocks from the @ng-apimock/test-application
  - registers the @ng-apimock/core middleware function to intercept http calls
  - serves the @ng-apimock/test-application
