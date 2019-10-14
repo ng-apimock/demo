@@ -16,3 +16,8 @@ You can start the script by running:
 ```shell
 npm run serve
 ```
+
+The dev-interface is now available at 
+```
+http://localhost:9900/dev-interface
+```
