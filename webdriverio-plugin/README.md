@@ -19,7 +19,7 @@ npm run serve
 
 #### Webdriverio 
 The [wdio.conf.js](https://raw.githubusercontent.com/ng-apimock/demo/master/webdriverio-plugin/wdio.conf.js) script:
- - uses the @ng-apimock/webdriverio-plugin
+ - uses the [wdio-ng-apimock-service](https://github.com/ng-apimock/webdriverio-plugin)
  
 You can start webdriverio tests by running: 
 ```shell
