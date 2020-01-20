@@ -6,27 +6,27 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [
-      "es6",
-      "es2015",
-      "dom"
+        "es6",
+        "es2015",
+        "dom"
     ],
-    "module": "commonjs",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noLib": false,
-    "outDir": "test",
-    "pretty": true,
-    "removeComments": true,
-    "sourceMap": false,
-    "skipLibCheck": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+      "module": "commonjs",
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitUseStrict": false,
+      "noLib": false,
+      "outDir": "dist",
+      "pretty": true,
+      "removeComments": true,
+      "sourceMap": false,
+      "skipLibCheck": true,
+      "target": "es2015",
+      "typeRoots": [
+          "node_modules/@types"
+      ]
   },
   "include": [
-    "node_modules/@ng-apimock/protractor-plugin/test/**/*.ts"
+      "test/**/*.ts"
   ]
 }

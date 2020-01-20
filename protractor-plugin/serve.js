@@ -2,6 +2,7 @@ const apimock = require('@ng-apimock/core');
 const connect = require('connect');
 const path = require('path');
 const app = connect();
+const bodyParser = require('body-parser');
 
 const testMocksDirectory = path.join(require.resolve('@ng-apimock/test-application'), '..', 'mocks'); // the mocks directory of the test application
 
@@ -9,7 +10,13 @@ const testMocksDirectory = path.join(require.resolve('@ng-apimock/test-applicati
 apimock.processor.process({src: testMocksDirectory});
 
 // Use the ng-apimock middelware
+app.use(bodyParser.json());
+app.use(function (request, response, next) {
+    next();
+});
+
 app.use(apimock.middleware);
+
 
 // Serve the test application under http://localhost:9900
 const serveStatic = require('serve-static');
