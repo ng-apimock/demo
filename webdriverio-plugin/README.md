@@ -1,5 +1,5 @@
-# @ng-apimock/webdriverio-plugin demo
-This is a demo setup for the @ng-apimock/webdriverio-plugin
+# wdio-ng-apimock-service demo
+This is a demo setup for the wdio-ng-apimock-service
 
 ## Getting Started
 ```shell
