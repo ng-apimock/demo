@@ -14,7 +14,7 @@ apimock.processor.process({src: testMocksDirectory});
 // Use the ng-apimock middelware
 app.use(apimock.middleware);
 
-// Serve the test application under http://localhost:9900
+// Serve the test application under http://localhost:3000
 app.use('/dev-interface', express.static(devInterface));
 
 app.listen(app.get('port'), function () {
