@@ -16,7 +16,7 @@ apimock.processor.process({src: testMocksDirectory});
 app.use(bodyParser.json());
 app.use(apimock.middleware);
 
-// Serve the test application under http://localhost:300
+// Serve the test application under http://localhost:3000
 app.use('/', express.static(testApplication));
 
 // PassThrough middleware
@@ -33,5 +33,4 @@ app.use('/items', function (request, response, next) {
 
 app.listen(app.get('port'), function () {
     console.log('@ng-apimock/core running on port', app.get('port'));
-    console.log('@ng-apimock/dev-interface is available under /dev-interface');
 });
