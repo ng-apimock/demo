@@ -24,7 +24,7 @@
     },
     "scripts": {
         "start": "node serve.js",
-        "cypress-local": "cypress open"
+        "cypress": "cypress open"
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "test/step_definitions"

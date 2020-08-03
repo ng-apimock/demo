@@ -1,5 +1,5 @@
-# wdio-ng-apimock-service demo
-This is a demo setup for the wdio-ng-apimock-service
+# @ng-apimock/cypress-plugin demo
+This is a demo setup for the @ng-apimock/cypress-plugin
 
 ## Getting Started
 ```shell
@@ -7,7 +7,7 @@ npm install
 ```
 
 #### Serve
-The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/webdriverio-plugin/serve.js) script:
+The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/cypress-plugin/serve.js) script:
  - processes the mocks from the @ng-apimock/test-application
  - registers the @ng-apimock/core middleware function to intercept http calls
  - serves the @ng-apimock/test-application
@@ -17,11 +17,14 @@ You can start the script by running:
 npm run serve
 ```
 
-#### Webdriverio 
-The [wdio.conf.js](https://raw.githubusercontent.com/ng-apimock/demo/master/webdriverio-plugin/wdio.conf.js) script:
- - uses the [wdio-ng-apimock-service](https://github.com/ng-apimock/webdriverio-plugin)
+#### Cypress 
+The [cypress.json](https://raw.githubusercontent.com/ng-apimock/demo/master/cypress-plugin/cypress.json) file:
+ - sets the environment variable `NG_API_MOCK_BASE_URL`
+ 
+The [support.js](https://raw.githubusercontent.com/ng-apimock/demo/master/cypress-plugin/test/support.js) file:
+ - loads the @ng-apimock/cypress-plugin
  
 You can start webdriverio tests by running: 
 ```shell
-npm run wdio
+npm run cypress
 ```
