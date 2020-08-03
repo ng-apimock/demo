@@ -1,7 +1,7 @@
 const path = require('path');
 exports.config = {
     allScriptsTimeout: 5000,
-    baseUrl: 'http://localhost:9900/',
+    baseUrl: 'http://localhost:3000/',
     params: {
         default_directory: '/tmp'
     },

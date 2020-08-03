@@ -6,6 +6,11 @@ This is a demo setup for the @ng-apimock/protractor-plugin
 npm install
 ```
 
+or 
+```shell
+yarn install
+```
+
 #### Serve
 The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/protractor-plugin/serve.js) script:
  - processes the mocks from the @ng-apimock/test-application
