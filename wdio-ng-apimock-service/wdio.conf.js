@@ -1,22 +1,24 @@
 const path = require('path');
+
 exports.config = {
     default_directory: '/tmp',
     specs: [
         path.join('test', 'features', '*.feature')
     ],
     sync: false,
-    baseUrl: 'http://localhost:9900/',
+    baseUrl: 'http://localhost:3000/',
     framework: 'cucumber',
     logLevel: 'error',
+    waitforTimeout: 15000,
     cucumberOpts: {
         requireModule: [
             () => {
-                require('ts-node').register({files: true})
+                require('ts-node').register({ files: true });
             }
         ],
         require: [
-            path.join('dist', 'step_definitions', '*.steps.js'),
-            path.join('dist', 'cucumber.helper.js')
+            path.join(__dirname, 'test', 'step_definitions', '*.steps.ts'),
+            path.join(__dirname, 'test', 'cucumber.helper.ts')
         ]
     },
     params: {
