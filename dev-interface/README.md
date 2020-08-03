@@ -6,6 +6,11 @@ This is a demo setup for the @ng-apimock/dev-interface
 npm install
 ```
 
+or 
+```shell
+yarn install
+```
+
 #### Serve
 The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/dev-interface/serve.js) script:
  - processes the mocks from the @ng-apimock/test-application
@@ -19,5 +24,5 @@ npm run serve
 
 The dev-interface is now available at 
 ```
-http://localhost:9900/dev-interface
+http://localhost:3000/dev-interface
 ```

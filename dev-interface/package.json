@@ -7,16 +7,14 @@
     "email": "mischa@dasberg.nl"
   },
   "license": "MIT",
-  "dependencies": {
-    "@ng-apimock/test-application": "^1.0.17"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@ng-apimock/core": "1.0.23",
+    "@ng-apimock/core": "2.3.2",
     "@ng-apimock/dev-interface": "1.0.7",
-    "connect": "3.7.0",
-    "serve-static": "1.14.1"
+    "@ng-apimock/test-application": "1.0.17",
+    "express": "4.17.1"
   },
   "scripts": {
-    "serve": "node serve.js"
+    "start": "node serve.js"
   }
 }
