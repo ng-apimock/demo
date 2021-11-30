@@ -3,11 +3,6 @@ This is a demo setup for the @ng-apimock/dev-interface
 
 ## Getting Started
 ```shell
-npm install
-```
-
-or 
-```shell
 yarn install
 ```
 
@@ -15,14 +10,15 @@ yarn install
 The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/dev-interface/serve.js) script:
  - processes the mocks from the @ng-apimock/test-application
  - registers the @ng-apimock/core middleware function to intercept http calls
+ - serves the @ng-apimock/test-application
  - serves the @ng-apimock/dev-interface
  
 You can start the script by running: 
 ```shell
-npm run serve
+yarn serve
 ```
 
 The dev-interface is now available at 
 ```
-http://localhost:3000/dev-interface
+http://localhost:9999/dev-interface
 ```

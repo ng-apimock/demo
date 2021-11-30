@@ -3,11 +3,6 @@ This is a demo setup for the @ng-apimock/protractor-plugin
 
 ## Getting Started
 ```shell
-npm install
-```
-
-or 
-```shell
 yarn install
 ```
 
@@ -19,7 +14,7 @@ The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/protract
  
 You can start the script by running: 
 ```shell
-npm run serve
+yarn serve
 ```
 
 #### Protractor 
@@ -28,5 +23,5 @@ The [protractor.conf.js](https://raw.githubusercontent.com/ng-apimock/demo/maste
  
 You can start protractor tests by running: 
 ```shell
-npm run protractor
+yarn protractor
 ```

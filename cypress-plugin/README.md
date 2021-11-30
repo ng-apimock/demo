@@ -3,7 +3,7 @@ This is a demo setup for the @ng-apimock/cypress-plugin
 
 ## Getting Started
 ```shell
-npm install
+yarn install
 ```
 
 #### Serve
@@ -14,7 +14,7 @@ The [serve.js](https://raw.githubusercontent.com/ng-apimock/demo/master/cypress-
  
 You can start the script by running: 
 ```shell
-npm run serve
+yarn serve
 ```
 
 #### Cypress 
@@ -26,5 +26,5 @@ The [support.js](https://raw.githubusercontent.com/ng-apimock/demo/master/cypres
  
 You can start webdriverio tests by running: 
 ```shell
-npm run cypress
+yarn cypress
 ```

@@ -7,13 +7,15 @@
     "email": "mischa@dasberg.nl"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@ng-apimock/core": "2.3.2",
-    "@ng-apimock/test-application": "1.0.17",
-    "express": "4.17.1"
+    "@ng-apimock/core": "3.4.0",
+    "@ng-apimock/test-application": "3.3.0",
+    "express": "4.17.1",
+    "http-proxy-middleware": "2.0.1",
+    "rimraf": "3.0.2"
   },
   "scripts": {
-    "start": "node serve.js"
+    "preserve": "rimraf .ngapimock",
+    "serve": "node serve.js"
   }
 }

@@ -1,7 +1,10 @@
 const path = require('path');
+
+let server;
+
 exports.config = {
     allScriptsTimeout: 5000,
-    baseUrl: 'http://localhost:3000/',
+    baseUrl: 'http://127.0.0.1:9999/',
     params: {
         default_directory: '/tmp'
     },
@@ -14,13 +17,27 @@ exports.config = {
             globalName: 'client'
         }
     }],
+    beforeLaunch: () => {
+        const childProcess = require('child_process');
+        server = childProcess.spawn('node',
+            [path.join(__dirname, 'serve.js')],
+            {
+                cwd: __dirname,
+                stdio: 'inherit'
+            });
+        process.on('exit', () => server.kill());
+    },
+    afterLaunch: () => {
+        server.kill();
+    },
     SELENIUM_PROMISE_MANAGER: true,
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     cucumberOpts: {
+        compiler: require('ts-node').register({}),
         require: [
-            path.join('dist', 'step_definitions', '*.steps.js'),
-            path.join('dist', 'cucumber.helper.js')
+            path.join(__dirname, 'test', 'step_definitions', '*.steps.ts'),
+            path.join(__dirname, 'test', 'cucumber.helper.ts')
         ],
         format: ['summary']
     },
