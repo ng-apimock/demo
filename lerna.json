@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "core",
+    "dev-interface",
+    "protractor-plugin",
+    "wdio-ng-apimock-service",
+    "cypress-plugin"
+  ],
+  "version": "0.0.0"
+}

@@ -33,7 +33,7 @@
     },
     "scripts": {
         "start": "node serve.js",
-        "prewdio": "rimraf .ngapimock",
-        "wdio": "wdio wdio.conf.js"
+        "pretest": "rimraf .ngapimock",
+        "test": "wdio wdio.conf.js"
     }
 }

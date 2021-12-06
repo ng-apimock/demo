@@ -8,7 +8,7 @@ const config = {
         path.join(__dirname, 'test', 'features', '**', '*.feature'),
     ],
     sync: false,
-    baseUrl: 'http://127.0.0.1:9999/',
+    baseUrl: 'http://127.0.0.1:10004/',
     framework: 'cucumber',
     logLevel: 'error',
     waitforTimeout: 15000,

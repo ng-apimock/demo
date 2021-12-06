@@ -1,0 +1,16 @@
+{
+  "name": "@ngapimock/demo",
+  "version": "1.0.0",
+  "description": "Demos for @ngapimock ",
+  "main": "index.js",
+  "repository": "git@github.com:ng-apimock/demo.git",
+  "author": "Mischa Dasberg <mischa@dasberg.nl>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "4.0.0"
+  },
+  "scripts": {
+    "serve": "lerna run serve --parallel",
+    "test": "lerna run test --parallel"
+  }
+}

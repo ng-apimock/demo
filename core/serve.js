@@ -5,11 +5,11 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
-app.set('port', 9999);
+app.set('port', 10001);
 
 const mocksDirectory = path.join(require.resolve('@ng-apimock/test-application'), '..', 'mocks');
 
-apimock.processor.process({ src: mocksDirectory });
+apimock.processor.process({ src: mocksDirectory, watch: true});
 app.use(apimock.middleware);
 app.use('/', express.static(path.join(require('@ng-apimock/test-application'))));
 

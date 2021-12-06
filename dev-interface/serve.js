@@ -6,7 +6,7 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
-app.set('port', 9999);
+app.set('port', 10002);
 
 const mocksDirectory = path.join(require.resolve('@ng-apimock/test-application'), '..', 'mocks');
 

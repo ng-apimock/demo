@@ -22,9 +22,9 @@
     },
     "scripts": {
         "cleanup": "node test/cleanup.js",
-        "precypress": "node serve.js &",
-        "cypress": "cypress run",
-        "postcypress": "kill $(lsof -t -i:9999)"
+        "pretest": "node serve.js &",
+        "test": "cypress run",
+        "posttest": "kill $(lsof -t -i:10005)"
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "test/step_definitions"

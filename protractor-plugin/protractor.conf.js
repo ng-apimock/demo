@@ -4,7 +4,7 @@ let server;
 
 exports.config = {
     allScriptsTimeout: 5000,
-    baseUrl: 'http://127.0.0.1:9999/',
+    baseUrl: 'http://127.0.0.1:10003/',
     params: {
         default_directory: '/tmp'
     },
