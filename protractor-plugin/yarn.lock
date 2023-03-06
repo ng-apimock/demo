@@ -1492,10 +1492,10 @@ jest-matcher-utils@^20.0.3:
     chalk "^1.1.3"
     pretty-format "^20.0.3"
 
-jest-matchers@^20.0.3:
+jest-matchers@20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-matchers/-/jest-matchers-20.0.3.tgz#ca69db1c32db5a6f707fa5e0401abb55700dfd60"
-  integrity sha1-ymnbHDLbWm9wf6XgQBq7VXAN/WA=
+  integrity sha512-aDlp50L8qPJ+Y+tifrlKewT0ZU1uC9OP7GJ5T0UKSw/wB73wf6jKEAZUqyA67BocW8BZD7qVVWHasm7u2D1CMQ==
   dependencies:
     jest-diff "^20.0.3"
     jest-matcher-utils "^20.0.3"
@@ -1697,9 +1697,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
+  integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
 moment@^2.29.1:
   version "2.29.1"
